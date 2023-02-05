@@ -1,0 +1,38 @@
+create database Activity4;
+use Activity4;
+create table Students(
+ID int not null auto_increment,
+Name varchar(255),
+Age int,
+DOB DATE,
+City varchar(255),
+Country varchar(255),
+Primary key(ID)
+);
+insert into Students (Name, Age, DOB, City, Country) values
+('Marcia','22','2000-12-10','Pasic','Philippines'),
+('General','25','1997-12-25','Mazatlan','Mexico'),
+('Nikko','22','2000-10-20','Berlin','Mexico'),
+('Derick','24','1998-02-14','Pai','Thailand'),
+('Will','30','0000-00-00','Bacoor','Philippines'),
+('Nickolas','30','0000-00-00','Cancun','Mexico'),
+('Ines','22','2000-11-20','Sukhothai','Thailand'),
+('Allison','24','1998-04-03','Berlin','Germany'),
+('Evangeline','30','0000-00-00','Sukhothai','Thailand'),
+('Braxton','31','1991-03-25','Berlin','Germany'),
+('Sierra','31','0000-00-00','Berlin','Germany'),
+('Crist','24','1998-07-05','Makati','Philippines'),
+('Bernardo','24','1998-08-04','Minden','Germany');
+
+1;
+select name from students order by age, country;
+
+2;
+select name, country from students order by city, country desc, id desc;
+
+3;
+
+
+
+
+
