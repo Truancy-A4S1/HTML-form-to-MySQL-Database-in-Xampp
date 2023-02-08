@@ -25,18 +25,33 @@ insert into Students (Name, Age, DOB, City, Country) values
 ('Bernardo','24','1998-08-04','Minden','Germany');
 
 1;
-select name from students order by age, country;
+
+SELECT name
+FROM students 
+ORDER BY age, country;
 
 2;
-select name, country from students order by city, country desc, id desc;
+
+SELECT name, country 
+FROM students 
+ORDER BY city, country DESC;
 
 3;
 
+SELECT 
+
 4;
-select id, name, city from students where DOB = NULL;
+
+SELECT id, name, city 
+FROM students 
+WHERE DOB = NULL;
 
 5;
-select id, name, city from students where dob is null or dob is not null order by city desc, country;
+
+SELECT id, name, city 
+FROM students 
+WHERE dob IS null OR dob IS NOT null 
+ORDER BY city DESC, country;
 
 
 
