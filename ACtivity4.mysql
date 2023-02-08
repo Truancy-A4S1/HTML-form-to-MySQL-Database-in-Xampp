@@ -32,6 +32,11 @@ select name, country from students order by city, country desc, id desc;
 
 3;
 
+4;
+select id, name, city from students where DOB = NULL;
+
+5;
+select id, name, city from students where dob is null or dob is not null order by city desc, country;
 
 
 
